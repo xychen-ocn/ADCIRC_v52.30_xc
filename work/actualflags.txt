@@ -1,0 +1,1836 @@
+----------------------------------
+Wed Sep 14 14:42:26 EDT 2016
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Sep 14 14:44:43 EDT 2016
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Sep 14 14:47:42 EDT 2016
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Sep 14 14:59:16 EDT 2016
+building padcswan
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Sep 14 15:20:51 EDT 2016
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Nov  2 15:21:35 EDT 2016
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Nov  2 15:25:35 EDT 2016
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Nov  2 15:29:35 EDT 2016
+building padcswan
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Nov  2 15:34:24 EDT 2016
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 13:40:40 EDT 2017
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 13:42:07 EDT 2017
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 13:44:11 EDT 2017
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 13:45:39 EDT 2017
+building padcswan
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 13:48:13 EDT 2017
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 15:13:47 EDT 2017
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 15:15:38 EDT 2017
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 15:18:19 EDT 2017
+building padcswan
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed May 10 15:22:46 EDT 2017
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Fri May 12 14:37:35 EDT 2017
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Fri May 12 14:41:05 EDT 2017
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Fri May 12 14:42:55 EDT 2017
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Fri May 12 14:45:54 EDT 2017
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Fri May 12 14:49:13 EDT 2017
+building padcswan
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Fri May 12 15:02:36 EDT 2017
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DADCNETCDF -I/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/include  -DHAVE_NETCDF4  -DNETCDF_CAN_DEFLATE 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdf  -L/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3/lib -lnetcdff -lnetcdf -lnetcdf
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := enable
+XDMF := 
+ifort (IFORT) 14.0.3 20140422
+----------------------------------
+----------------------------------
+Wed Dec 18 13:09:01 EST 2019
+building adcprep
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:15:57 EST 2019
+building adcprep
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:16:28 EST 2019
+building adcpost
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:16:43 EST 2019
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:17:55 EST 2019
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:52:18 EST 2019
+building adcprep
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enalbe
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:52:19 EST 2019
+building adcpost
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enalbe
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:52:19 EST 2019
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enalbe
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Dec 18 13:52:20 EST 2019
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS2 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+FFLAGS3 := -I . -I ../prep -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX -DADCSWAN
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2  -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := 
+MACHINENAME := 
+NETCDF := enalbe
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:23:43 EST 2020
+building adcprep
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:24:25 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:25:59 EST 2020
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:26:04 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:33:23 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:34:11 EST 2020
+building adcprep
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:34:16 EST 2020
+building adcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:34:19 EST 2020
+building adcpost
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:34:44 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:48:06 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:48:44 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:51:30 EST 2020
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Thu Feb 27 17:53:00 EST 2020
+building adcpost
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 14:07:01 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 14:07:04 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 14:14:17 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 14:14:18 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 16:34:46 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 16:34:58 EST 2020
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 16:35:15 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 17:03:53 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/lib -lnetcdf 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := enable
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Fri Feb 28 17:04:24 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:12:14 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:12:49 EST 2020
+building adcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:14:07 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:20:45 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:46:26 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -DADCNETCDF -I/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/lib -lnetcdf 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:47:49 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Tue Mar  3 12:48:17 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Mar  4 17:01:11 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Mar  4 17:08:20 EST 2020
+building padcirc
+PPFC := ifort
+FC := ifort
+PFC := mpif90
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := 
+MSGLIBS := 
+compiler := intel
+MACHINENAME := 
+NETCDF := /usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0
+NETCDF4 := 
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Mar  4 17:08:44 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Mar  4 17:10:04 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Mar  4 17:10:52 EST 2020
+building adcprep
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -Lodir_metis -lmetis -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------
+----------------------------------
+Wed Mar  4 17:12:50 EST 2020
+building padcirc
+PPFC := ifort -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FC := ifort
+PFC := mpif90 -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS1 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS2 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+FFLAGS3 := -I . -I ../prep -O2 -FI -assume byterecl -132 -assume buffered_io -xAVX -traceback -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include -DADCNETCDF -I/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/include  -DHAVE_NETCDF4 
+DA := -DREAL8 -DLINUX -DCSCA
+DP := -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE := -DREAL8 -DLINUX
+IMODS := -I
+CC := icc
+CCBE := icc
+CFLAGS := -I . -I ../prep -O2 -m64 -mcmodel=medium -DLINUX
+CLIBS := 
+LIBS := -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdf  -L/usr/share/Modules/software/CentOS-7/netcdf-Fortran/4.4.0_intel-18.0.0/lib -lnetcdff -lnetcdf
+MSGLIBS := 
+compiler := intel
+MACHINENAME := hatteras
+NETCDF := enable
+NETCDF4 := enable
+NETCDF4_COMPRESSION := 
+XDMF := 
+ifort (IFORT) 18.0.0 20170811
+----------------------------------

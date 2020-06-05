@@ -1,0 +1,7 @@
+need to specify MACHINENAME=hatteras on command line to get netcdf stuff right.
+XC: also, I need to load openmpi/intel_3.0.0 moudle for a successful compilation
+    openmpi will give mpi error if CPU # is too large;
+    should load mvapich2/2.3b_intel-18.0.0_nemisis_ofed-4.1
+e.g.: make padcirc NETCDF=enable NETCDF4=enable MACHINENAME=hatteras
+
+

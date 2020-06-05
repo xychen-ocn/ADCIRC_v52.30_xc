@@ -1,0 +1,35 @@
+# SRCDIR is set in makefile or on the compile line
+INCDIRS := -I . -I $(SRCDIR)/prep
+
+PPFC          :=  ifort
+FC            :=  ifort
+PFC           :=  mpif90
+FFLAGS1       :=  $(INCDIRS) -O3 -FI -assume byterecl -132 -shared-intel -assume buffered_io -traceback  -xAVX
+ifeq ($(DEBUG),full)
+   FFLAGS1       :=  $(INCDIRS) -g -O0 -traceback -debug -check all -i-dynamic -FI -assume byterecl -132 -DALL_TRACE -DFULL_STACK -DFLUSH_MESSAGES
+endif
+FFLAGS2       :=  $(FFLAGS1)
+FFLAGS3       :=  $(FFLAGS1)
+DA            :=  -DREAL8 -DLINUX -DCSCA
+DP            :=  -DREAL8 -DLINUX -DCSCA -DCMPI
+DPRE          :=  -DREAL8 -DLINUX -DADCSWAN
+#ifeq ($(SWAN),enable)
+#   DPRE          := $(DPRE) -DADCSWAN
+#endif
+IMODS         :=  -I
+CC            := icc
+CCBE		:= $(CC)
+CFLAGS        := $(INCDIRS) -O2  -m64 -mcmodel=medium -DLINUX
+ifeq ($(DEBUG),full)
+   CFLAGS        := $(INCDIRS) -g -O0 -march=k8 -m64 -mcmodel=medium -DLINUX
+endif
+CLIBS         :=
+FLIBS          :=
+MSGLIBS       :=
+ifeq ($(NETCDF),enable)
+      NETCDFHOME    :=/usr/share/Modules/software/RHEL-6.5/netcdf/netcdf-4.1.3_intel-14.0.3
+      FLIBS         := $(FLIBS) -L$(NETCDFHOME)/lib -lnetcdff -lnetcdf -lnetcdf
+      FFLAGS1       :=$(FFLAGS1) -I$(NETCDFHOME)/include 
+      FFLAGS2       :=$(FFLAGS1)
+      FFLAGS3       :=$(FFLAGS1)
+endif
