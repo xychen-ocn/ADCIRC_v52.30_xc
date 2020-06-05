@@ -1,0 +1,8 @@
+files with NWS7 tag are used for testing wind stress provided on a rectangular grid.
+files with NWS6 tag are the equivalent wind speed input for comparison.
+
+On Hatteras for some reasons, the parrallel adcirc works well only if I compile the source codes with 
+mvapich2/2.3b_intel-18.0.0_nemisis_ofed-4.1
+
+otherwise I would get mpi errors (with openmpi) or code compilation errors (with mvapich2/2.3b_intel-18.0.0_ch3_ofed-4.1). 
+
