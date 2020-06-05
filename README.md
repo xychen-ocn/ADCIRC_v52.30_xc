@@ -3,4 +3,4 @@ NWS=7 is designed to read in wind stress, instead of wind speed, on a structured
 NWS=6. However the original code is still implemented as if NWS=2 (on a triangular mesh).
 
 Correction has been applied to make NWS=7 to perform as it was described on the ADCIRC manual.
-However, I need to double check the code again because I think my NWS=2 can not work properly in this version I uploaded.
+However, somehow the NWS=2 can not work properly in this version I uploaded, but I didn't modify any code related to NWS=2.
